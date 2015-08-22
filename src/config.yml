@@ -1,0 +1,6 @@
+join:
+    enable-message: true
+    message: '&a&lWelcome to the server {player}!'
+leave:
+    enable-message: true
+    message: '&c&lWe will see you soon {player}!'
