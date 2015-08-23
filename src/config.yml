@@ -4,9 +4,9 @@
 #                 #
 ###################
 #
-# enable-message: - Do you want this message enabled?
+# enable-message: true/false - Do you want this message enabled?
 # 
-# message: - What should the message be?
+# message: '&a&l+ {player}' - What should the message be?
 
 join:
     enable-message: true
