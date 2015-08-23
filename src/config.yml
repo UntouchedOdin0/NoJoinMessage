@@ -1,6 +1,16 @@
+###################
+#                 #
+# NoJoinMessage+  #
+#                 #
+###################
+#
+# enable-message: - Do you want this message enabled?
+# 
+# message: - What should the message be?
+
 join:
     enable-message: true
-    message: '&a&lWelcome to the server {player}!'
+    message: '&a&l+ {player}'
 leave:
     enable-message: true
-    message: '&c&lWe will see you soon {player}!'
+    message: '&c&l- {player}'

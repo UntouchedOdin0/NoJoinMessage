@@ -18,6 +18,8 @@ public class LeaveListener implements Listener {
 	public void onLeave(PlayerQuitEvent e){
 		if (_plugin.getConfig().getBoolean("leave.enable-message") == true){
 			e.setQuitMessage(_plugin.getConfig().getString("leave.message").replace("&", "§").replace("{player}", e.getPlayer().getName()));
+		}else{
+			e.setQuitMessage("");
 		}
 	}
 }

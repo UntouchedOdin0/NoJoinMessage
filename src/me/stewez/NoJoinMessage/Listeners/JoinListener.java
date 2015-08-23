@@ -18,6 +18,8 @@ public class JoinListener implements Listener {
 	public void onJoin(PlayerJoinEvent e){
 		if (_plugin.getConfig().getBoolean("join.enable-message") == true){
 			e.setJoinMessage(_plugin.getConfig().getString("join.message").replace("&", "§").replace("{player}", e.getPlayer().getName()));
+		}else{
+			e.setJoinMessage("");
 		}
 	}
 }
