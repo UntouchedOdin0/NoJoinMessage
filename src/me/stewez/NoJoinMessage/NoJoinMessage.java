@@ -10,12 +10,17 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class NoJoinMessage extends JavaPlugin {
 
+	//Lets enable the plugin and load files!
 	public void onEnable(){
 		registerListeners();
 		registerCommands();
 		
+		//Lets save the config.
+		
 		saveDefaultConfig();
 	}
+	
+	//We need to register the Listeners
 	
 	private void registerListeners(){
 		PluginManager pm = Bukkit.getServer().getPluginManager();
@@ -23,6 +28,8 @@ public class NoJoinMessage extends JavaPlugin {
 		pm.registerEvents(new JoinListener(this), this);
 		pm.registerEvents(new LeaveListener(this), this);
 	}
+	
+	//Lets register the commands.
 	
 	private void registerCommands(){
 		getCommand("nojoinmessage").setExecutor(new Commands(this));
